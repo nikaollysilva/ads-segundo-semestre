@@ -1,4 +1,4 @@
-package LISTA02;
+package Lista02;
 
 import java.util.Scanner;
 
@@ -22,8 +22,8 @@ public class Exer05_IMC {
 
         imc = peso /(altura * 2);
 
-        if (sexo == 1) {
-
+        switch (sexo){
+            case 1:
             if (imc < 19.1) {
                 System.out.println("Abaixo do peso");
             } else if (imc > 19.1 && imc < 25.8) {
@@ -35,8 +35,9 @@ public class Exer05_IMC {
             } else {
                 System.out.println("Obeso");
             }
+            break;
 
-        } else if (sexo == 2) {
+            case 2:
 
             if (imc < 20.7) {
                 System.out.println("Abaixo do peso");
@@ -49,9 +50,12 @@ public class Exer05_IMC {
             } else {
                 System.out.println("Obeso");
             }
+            break;
 
-        } else {
+            default:
             System.out.println("Selecione um dos Sexos Válidos");
+            break;
+
         }
 
         System.out.println("Seu imc é: "+ imc);

@@ -2,7 +2,7 @@ package LISTA01;
 
 import java.util.Scanner;
 
-public class Exer05 {
+public class Exer05_CalcSalario {
     public static void main(String[] args) {
 
         Double salarioUser;
@@ -18,7 +18,7 @@ public class Exer05 {
         System.out.println("Insira a porcentagem de imposto que deve pagar:");
         imposto = leitor.nextDouble();
 
-        impostoDin = salarioUser * (imposto * 0.010);
+        impostoDin = salarioUser * (imposto * 0.01);
         salarioLiq = salarioUser - impostoDin;
 
         System.out.println("Salário liquido: R$" +salarioLiq);

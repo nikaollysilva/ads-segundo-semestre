@@ -2,7 +2,8 @@ package LISTA01;
 
 import java.util.Scanner;
 
-public class Exer01 {
+public class Exer01_CalcSimples {
+
 
     public static void main(String[] args) {
         Double  num1, num2;

@@ -2,7 +2,7 @@ package LISTA01;
 
 import java.util.Scanner;
 
-public class Exer02 {
+public class Exer02_Idade {
     public static void main(String[] args) {
 
         String nome;

@@ -2,7 +2,7 @@ package LISTA01;
 
 import java.util.Scanner;
 
-public class Exer03 {
+public class Exer03_Elevador {
     public static void main(String[] args) {
         Double limitePeso;
         Integer limitePessoa;

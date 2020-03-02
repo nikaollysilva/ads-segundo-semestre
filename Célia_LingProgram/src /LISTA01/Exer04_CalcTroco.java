@@ -2,7 +2,7 @@ package LISTA01;
 
 import java.util.Scanner;
 
-public class Exer04 {
+public class Exer04_CalcTroco {
     public static void main(String[] args) {
 
         Double valorProduto;
