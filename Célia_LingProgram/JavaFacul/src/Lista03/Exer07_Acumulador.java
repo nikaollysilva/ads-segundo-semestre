@@ -13,7 +13,7 @@ public class Exer07_Acumulador {
             sorteio = aleatorio.nextInt(6);
             a += sorteio;
             System.out.println("Número: " + sorteio);
-//            System.out.println("Total:" +  a);
+//          System.out.println("Total:" +  a);
         } while (sorteio != 0);
 
         System.out.println("Total: " + a);

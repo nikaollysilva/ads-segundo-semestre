@@ -18,7 +18,7 @@ public class Exer02_Loteria {
         Integer valorDado = null;
 
         while(numero != valorDado){
-            valorDado = aleatorio.nextInt(10);
+            valorDado = aleatorio.nextInt(11);
             contador++;
             System.out.println(contador+"º Numero sorteado: "+valorDado);
         }

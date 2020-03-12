@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exer09_Potencia {
     public static void main(String[] args) {
-        Integer base, expoente, contador = 1, total = 0, a;
+        Integer base, expoente, contador = 1, a;
 
 
         Scanner leitor = new Scanner(System.in);

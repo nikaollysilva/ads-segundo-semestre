@@ -31,7 +31,6 @@ public class Exer08_Votacao {
                     Q50++;
                     break;
             }
-
             contador++;
         }
 
