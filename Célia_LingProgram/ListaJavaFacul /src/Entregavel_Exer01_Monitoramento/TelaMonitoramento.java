@@ -72,14 +72,16 @@ public class TelaMonitoramento extends JFrame {
         });
     }
 
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("TelaMonitoramento");
-        frame.setContentPane(new TelaMonitoramento().JPanel);
-        frame.setSize(500,250);
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setLocation(dim.width / 2 - frame.getSize().width/2, dim.height / 2 - frame.getSize().height/2);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
-    }
+   public static void start(){
+      JFrame frame = new JFrame("TelaMonitoramento");
+      frame.setContentPane(new TelaMonitoramento().JPanel);
+      frame.setSize(500,250);
+      Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+      frame.setLocation(dim.width / 2 - frame.getSize().width/2, dim.height / 2 - frame.getSize().height/2);
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      frame.pack();
+      frame.setVisible(true);
+  }
+
+
 }
