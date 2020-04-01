@@ -19,11 +19,13 @@ public class TelaMensagem {
         });
     }
 
-    public static void main(String[] args) {
+    public static void StartMensagem(){
         JFrame frame = new JFrame("App");
         frame.setContentPane(new TelaMensagem().panelMain);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
         frame.pack();
         frame.setVisible(true);
     }
+
 }

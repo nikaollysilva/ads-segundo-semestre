@@ -21,7 +21,6 @@ public class TelaTabela {
 
     public TelaTabela() {
         jTProdutos.setModel(tableModel);
-        jTProdutos.setSize(200,200);
 
 //Testando uma coisinha...>>>
 //        Integer a = colunas.length;
