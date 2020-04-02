@@ -30,6 +30,7 @@ public class TelaCalculadora {
     private char math_operator;
 
     private void getOperator(String btnText){
+//        Esse charAt(0), esta pegando o indice 0 da minha string
         math_operator = btnText.charAt(0);
         total1 = total1 + Double.parseDouble(textDisplay.getText());
         textDisplay.setText("");

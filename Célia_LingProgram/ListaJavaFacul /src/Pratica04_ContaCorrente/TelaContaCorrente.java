@@ -50,7 +50,6 @@ public class TelaContaCorrente extends ContaCorrente{
         lblSaldo.setText(conta01.getSaldo().toString());
         lblTrasacoes.setText(conta01.getTransacoes().toString());
         lblMensagem.setText(conta01.getFrase());
-
     }
 
 

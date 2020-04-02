@@ -14,5 +14,89 @@ package Pratica05_Carro;
 //A velocidade maxima permitida é de 120km/h.
 //Ao desligar, a velocidade deve ser zerada e o status devera mostrar "Desligado";
 
-public class TelaCarro {
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class TelaCarro extends Carro {
+    private JButton acelerarButton;
+    private JButton frearButton;
+    private JButton ligarButton;
+    private JButton desligarButton;
+    private JProgressBar prgGasolina;
+    private javax.swing.JPanel JPanel;
+    private JLabel txtVelocidade;
+    private JLabel txtLigDes;
+    private JLabel txtMensagem;
+    private JLabel txtStatusGasolina;
+    private JButton btnAbastecer;
+
+    Carro carroAmarelo = new Carro();
+
+    public TelaCarro() {
+      AttInformacoes();
+
+        acelerarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                carroAmarelo.acelerar();
+                AttInformacoes();
+            }
+        });
+        frearButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                carroAmarelo.frear();
+                AttInformacoes();
+            }
+        });
+        ligarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                carroAmarelo.ligar();
+                AttInformacoes();
+            }
+        });
+        desligarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                carroAmarelo.desligar();
+                AttInformacoes();
+            }
+        });
+
+
+        btnAbastecer.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                carroAmarelo.abastecer();
+                AttInformacoes();
+            }
+        });
+    }
+
+    void AttInformacoes(){
+
+        txtStatusGasolina.setText(carroAmarelo.statusGasolina);
+        txtStatusGasolina.setForeground(Color.decode(carroAmarelo.getColorGasolina()));
+
+        txtVelocidade.setText(carroAmarelo.getVelocidade().toString());
+        Integer value = carroAmarelo.getGasolina().intValue();
+        prgGasolina.setValue(value);
+
+        txtLigDes.setText(carroAmarelo.getStatus());
+        txtLigDes.setForeground(Color.decode(carroAmarelo.getColorStatus()));
+        txtMensagem.setText(carroAmarelo.getMensagem());
+        txtMensagem.setForeground(Color.decode(carroAmarelo.getColorMensagem()));
+
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("TelaCarro");
+        frame.setContentPane(new TelaCarro().JPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }

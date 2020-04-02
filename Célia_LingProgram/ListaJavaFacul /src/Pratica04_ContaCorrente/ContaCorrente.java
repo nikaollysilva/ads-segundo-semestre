@@ -9,19 +9,19 @@ public class ContaCorrente {
 
     //    Metodos, funcoes
     void sacar() {
-        if ((saldo - 50) >= 0) {
-            saldo -= 50;
-            frase = "Saque efetuado";
+        if ((getSaldo()- 50) >= 0) {
+            setSaldo(getSaldo() - 50);
+            setFrase("Saque efetuado");
             transacoes++;
         } else {
-            frase = "Impossivel sacar, saldo insuficiente";
+            setFrase("Impossivel sacar, saldo insuficiente");
         }
     }
 
     void depositar() {
-        saldo += 50;
-        frase = "Deposito efetuado";
-        transacoes++;
+        setSaldo(getSaldo() + 50);
+        setFrase("Deposito efetuado");
+        setTransacoes(getTransacoes() + 1);
     }
 
     //  GET/SET
