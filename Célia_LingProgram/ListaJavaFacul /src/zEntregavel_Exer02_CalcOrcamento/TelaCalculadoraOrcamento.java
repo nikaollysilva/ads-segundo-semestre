@@ -1,4 +1,4 @@
-package Entregavel_Exer02_CalcOrcamento;
+package zEntregavel_Exer02_CalcOrcamento;
 
 //Opção 2: Calculadora de orçamento
 //        Tela única com os campos "Computadores", "Salas", 'Micros com Windows" e "Micros com Linux".
