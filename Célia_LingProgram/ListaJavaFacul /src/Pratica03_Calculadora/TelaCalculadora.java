@@ -1,6 +1,7 @@
 package Pratica03_Calculadora;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -184,6 +185,9 @@ public class TelaCalculadora {
     public static void main(String[] args) {
         JFrame frame = new JFrame("JavaCalculadora" );
         frame.setContentPane(new TelaCalculadora().JPanel);
+        frame.setSize(500,250);
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        frame.setLocation(dim.width / 2 - frame.getSize().width/2, dim.height / 2 - frame.getSize().height/2);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
