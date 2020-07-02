@@ -1,0 +1,53 @@
+pichon
+insominia
+netBens 8.2
+sketchBook
+ubuntu 16.04
+discord
+visual studio code
+videos oministec
+git hub
+node.js
+
+  SELECT * FROM funcionario INNER JOIN conquistas ON idFunc = fk_func WHERE idFunc = 3
+  UPDATE maquina SET status ='Estável' WHERE fk_func = 3;
+  INSERT INTO trofeu(nomeTrofeu, descricaoTrofeu) 
+  VALUES ('Kotlin', 'Usar kotlin em cinco relatorios')
+  INSERT INTO habilidade(fk_func, fk_tec) VALUES (3, 1);
+  select * from funcionario where idFunc=25 
+  UPDATE conquistas SET fk_horas = 12 WHERE fk_trofeu = 1 and fk_func = 3;
+  UPDATE maquina SET status ='Alerta' WHERE fk_func = 7;
+  UPDATE monitoramento SET valorCPU = 36.009, valorMemoria = 10, valorDisco = 35 WHERE fk_maquina = 1;
+  SELECT * FROM funcionario Where fk_idAdmin = 3 AND status = 'Alerta' ORDER BY nomeFunc
+  select * from funcionario INNER JOIN maquina on idFunc = fk_func Where status = 'Alerta' and fk_admin = 3
+  select * from funcionario INNER JOIN maquina on idFunc = fk_func Where fk_admin = 3 -- N RETORNA TODOS fk_admin = 3 
+  select * from funcionario Where fk_admin = 3 --ESSE RETORNA TODOS, n tem fk_func
+  SELECT TOP 8* FROM funcionario Where fk_admin = 3 ORDER BY idFunc DESC
+  SELECT * FROM funcionario Where fk_admin = 3 ORDER BY nomeFunc
+  SELECT TOP 10* FROM funcionario Where fk_admin = 3 ORDER BY horasSemana DESC 
+  SELECT * FROM administrador WHERE emailAdministrador = 'viss.grupo@bandtec.com'
+  SELECT * FROM usuario WHERE emailUsuario = 'nikolly.silva@bandtec.com'
+  SELECT TOP 2 * FROM funcionario
+  SELECT TOP 10* FROM funcionario ORDER BY idUsuario DESC
+  SELECT TOP 10* FROM funcionario Where FK_idAdministrador = 2 ORDER BY idUsuario DESC
+  SELECT * FROM funcionario INNER JOIN administrador ON idAdmnistrador = FK_idAdministrador(Pegando todos os dados da Tabela usuario e adm onde o IDadm é igual a FKadm)
+  SELECT * FROM funcionario WHERE FK_idAdministrador = 1(Pegar todos os dados da tabela usuario onde a FKadm é = 1)
+  INSERT INTO funcionario(FK_idAdministrador, nomeUsuario, emailUsuario, senhaUsuario, funcaoUsuario) VALUES (1,'?', '?', '?', '?')
+  INSERT INTO funcionario(FK_idAdministrador, nomeUsuario, emailUsuario, telefoneUsuario, senhaUsuario, funcaoUsuario, statusUsuario, dataCadastro) 
+  VALUES (1,'Bruno Rabelo', 'brunoRabelo@gmail.com', '11889229291', 'senhaPadrao', 'Gerente Comercial', 'Estável', '06/06/2020')
+  UPDATE funcionario SET funcaoUsuario ='Desenvolvedor' WHERE idMaquina = '198b';
+-------------------------------------------------------------------------------------------------------------------
+http://localhost:3333/
+-------------------------------------------------------------------------------------------------------------------
+Curso Java:https: //www.youtube.com/channel/UCgOu28f2-cdegVHuZZhLDdA
+Curso de node: https://www.youtube.com/watch?v=LLqq6FemMNQ
+jDesktop panel: https://www.youtube.com/watch?v=6PkjSLdOPNg
+Descompila.
+-------------------------------------------------------------------------------------------------------------------
+Acabar curso de node;
+Acabar curso de swift;
+Agilzar tudo para se matricular no curso do carrefour:
+https://digitalinnovation.one/bootcamps/backend-developer-carrefour?webview=1
+____________________________________________________________________________________________________________________________________________________________
+
+https://account.wacom.com/pt-br/offers/offer?rid=b2e9448e-e8ba-49ec-80eb-6e05d70744f3
