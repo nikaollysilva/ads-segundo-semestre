@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="SuaPasta/Chart.min.js"></script>
+</head>
+
+<body>
+    <canvas id="primeiroGrafico"></canvas>
+    <!-- o link a seguir direciona para a biblioteca online do Chart.js -->
+    <!-- a biblioteca também está disponível para download no site do Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <button onclick="carregarGrafico()"></button>
+    <label id="label"></label>
+</body>
+
+</html>
+<script>
+    function carregarGrafico() {
+        var i = 0
+        var vetor = []
+        var funcionariosBanco = 13;
+        while(i < funcionariosBanco){
+        vetor.push(i);
+        i++;    
+        }
+        let primeiroGrafico = document.getElementById('primeiroGrafico').getContext('2d');
+        let chart = new Chart(primeiroGrafico, {
+            type: 'bar',
+            data: {
+                labels: vetor,
+                datasets: [{
+                    label: 'Titulo',
+                    data: vetor,
+                    backgroundColor: "rgba(255, 34, 0, 0.3)",
+                    borderColor: "#0000ff",
+                    height: "70px"
+                },
+                ]
+            }
+        });
+    }
+</script>
