@@ -1,0 +1,4 @@
+connection\ConnectionFactory.class
+model\dao\categoriaDAO.class
+model\bean\Produto.class
+model\bean\Categoria.class

@@ -1,0 +1,5 @@
+com\mycompany\exemplo\classe\abstrata\Horista.class
+com\mycompany\exemplo\classe\abstrata\Empresa.class
+com\mycompany\exemplo\classe\abstrata\Funcionario.class
+com\mycompany\exemplo\classe\abstrata\Vendedor.class
+com\mycompany\exemplo\classe\abstrata\ExemploClasseAbstrata.class
